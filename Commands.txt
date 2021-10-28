@@ -1,0 +1,71 @@
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ cd /C/DT/GITHUB/
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB
+$ git init
+Initialized empty Git repository in C:/DT/GITHUB/.git/
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        GIT_Test .xlsx
+        Message.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git add .
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git commit -m "Initial Commit"
+[master (root-commit) 67891fa] Initial Commit
+ 2 files changed, 1 insertion(+)
+ create mode 100644 GIT_Test .xlsx
+ create mode 100644 Message.txt
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git remote add origin git@github.com:dheerajtuteja/TESTGIT.git
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git push origin master
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 6.74 KiB | 6.74 MiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0
+To github.com:dheerajtuteja/TESTGIT.git
+ * [new branch]      master -> master
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ cd /C/DT/GITHUB/
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$ git pull origin master
+remote: Enumerating objects: 7, done.
+remote: Counting objects: 100% (7/7), done.
+remote: Compressing objects: 100% (4/4), done.
+remote: Total 6 (delta 1), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (6/6), 1.33 KiB | 97.00 KiB/s, done.
+From github.com:dheerajtuteja/TESTGIT
+ * branch            master     -> FETCH_HEAD
+   67891fa..59a0c6c  master     -> origin/master
+Updating 67891fa..59a0c6c
+Fast-forward
+ SecondFile.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 SecondFile.txt
+
+DHTU@PC93023 MINGW64 /C/DT/GITHUB (master)
+$
+
+
+https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent
